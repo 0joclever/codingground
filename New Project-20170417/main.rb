@@ -12,6 +12,7 @@ class Canard
  end
 end
 classcanard = Canard. new
+puts("travail de Canard: ")
 classcanard.saitfaire
 print "---------------end of one-------------- \n";
 # l'humain parle (trop)
@@ -29,6 +30,8 @@ humain = Humain.new
 imitateur = Humain.new
 puts("imitateur parle donc comme Humain: ")
 imitateur.parle
+puts("-------------end of two----------------")
+
 # la puissance de Ruby
 def imitateur.faire_coincoin
  puts "coin, coin !"
@@ -36,16 +39,17 @@ end
 tigre = Canard.new
 puts("tigre sait faire: ")
 tigre.saitfaire
+puts("-------------end of three----------------")
 def tigre.faire_roar
  puts "ROOARROARROARROARROARROAROAR !"
 end
-puts "On y va ???????????????????????????"
+puts "On y va canard, imitateur, tigre et humain "
 # et maintenant voici le typage de canard:
-canard.saitfaire # => "coincoin"
+canard.saitfaire # 
 puts("imitateur a appris aussi:");
-imitateur.faire_coincoin # => "coin, coin!"
+imitateur.faire_coincoin #
 puts("tigre fait si Humain s'approche: :");
 tigre.faire_roar
 puts("humain sait faire:");
 humain.parle
-puts "On a fini"
+puts "On a fini!"
